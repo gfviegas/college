@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Light/OpenSans-Light.eot?v=1.1.0");
+  src: url("../fonts/Light/OpenSans-Light.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/Light/OpenSans-Light.woff2?v=1.1.0") format("woff2"), url("../fonts/Light/OpenSans-Light.woff?v=1.1.0") format("woff"), url("../fonts/Light/OpenSans-Light.ttf?v=1.1.0") format("truetype"), url("../fonts/Light/OpenSans-Light.svg?v=1.1.0#Light") format("svg");
+  font-weight: 300;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/LightItalic/OpenSans-LightItalic.eot?v=1.1.0");
+  src: url("../fonts/LightItalic/OpenSans-LightItalic.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/LightItalic/OpenSans-LightItalic.woff2?v=1.1.0") format("woff2"), url("../fonts/LightItalic/OpenSans-LightItalic.woff?v=1.1.0") format("woff"), url("../fonts/LightItalic/OpenSans-LightItalic.ttf?v=1.1.0") format("truetype"), url("../fonts/LightItalic/OpenSans-LightItalic.svg?v=1.1.0#LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Regular/OpenSans-Regular.eot?v=1.1.0");
+  src: url("../fonts/Regular/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), url("../fonts/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff"), url("../fonts/Regular/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), url("../fonts/Regular/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Italic/OpenSans-Italic.eot?v=1.1.0");
+  src: url("../fonts/Italic/OpenSans-Italic.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/Italic/OpenSans-Italic.woff2?v=1.1.0") format("woff2"), url("../fonts/Italic/OpenSans-Italic.woff?v=1.1.0") format("woff"), url("../fonts/Italic/OpenSans-Italic.ttf?v=1.1.0") format("truetype"), url("../fonts/Italic/OpenSans-Italic.svg?v=1.1.0#Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Bold/OpenSans-Bold.eot?v=1.1.0");
+  src: url("../fonts/Bold/OpenSans-Bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), url("../fonts/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff"), url("../fonts/Bold/OpenSans-Bold.ttf?v=1.1.0") format("truetype"), url("../fonts/Bold/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    font-family: "Open Sans";
+    background: #e8e8e8;
+}
+
+h1,h2,h3,h4,h5 {
+    text-align: center;
+}
+
+.separator {
+    height: 1px;
+    background: black none repeat scroll 0% 0%;
+    border-radius: 16px;
+    border: 1px solid black;
+    width: 65%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.jumbotron, p, i {
+    font-weight: 100;
+}
+
+#layout {
+    float: left;
+    width: 100%;
+}
+
+#layout #topbar {
+    width: 100%;
+    background: rgba(7, 54, 145, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    height: 20px;
+    position: fixed;
+}
+
+#layout #sidebar {
+    position: fixed;
+    float: left;
+    width: 20%;
+    background: black;
+    height: 100vh;
+    z-index: 101;
+    text-align: center;
+}
+
+#layout #sidebar .titulo {
+    font-size: 20px;
+    color: white;
+    background: rgba(7, 85, 162, 1);
+    height: 50px;
+}
+
+#layout #sidebar .titulo span {
+    display: block;
+    padding-top: 15px;  
+}
+
+#layout #sidebar .menu ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+#layout #sidebar .menu ul li {
+    font-family: sans-serif;
+    height: 45px;
+    line-height: 25.6px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#layout #sidebar .menu ul li:hover {
+    background: rgba(61, 61, 61, 0.75);
+}
+
+#layout #sidebar .menu ul li .active{
+    background: white;
+    color: black;
+}
+
+#layout #sidebar .menu ul li a {
+    border: none;
+    white-space: normal;
+    padding: 0.625em 1em;
+    color: #999;
+    display: block;
+    text-decoration: none;
+}
+
+#layout #content {
+    display: block;
+    float: right;
+    width: 75%;
+    padding: 20px 10px 10px 10px;
+}
+
+#layout #content .iframe {
+    width: 100%;
+    border: 0;
+    font-family: tahoma;
+    color: red;
+}
+
+#layout #footer {
+    display: block;
+    font-weight: 100;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    background: rgba(7, 54, 145, 1);
+    text-align: center;
+    color: rgba(240, 240, 240, 0.69);
+    z-index: 100;
+}
+#layout #footer a {
+    color: white;
+    text-decoration: none;
+}
