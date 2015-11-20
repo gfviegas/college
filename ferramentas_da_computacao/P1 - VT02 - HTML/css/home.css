@@ -1,0 +1,8 @@
+@import "index.css";
+
+ul {
+    list-style: none;
+}
+li b {
+    font-weight: bold;
+}

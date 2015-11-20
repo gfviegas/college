@@ -31,13 +31,16 @@
     }
     
     $(document).ready(function(){
-        $("#content").load($(".active").data("href"));
+        var links = $(".menu-link");
+        links[0].click();
+        
+        /*$("#content").load($(".active").data("href"));
 
         $(".menu-link").on("click", function(){
             var destino = $(this).data("href");
             $("#content .view").fadeOut("slow", function(){
                 $("#content").load(destino);
             });
-        });
+        });*/
     });
 }(this, this.document));

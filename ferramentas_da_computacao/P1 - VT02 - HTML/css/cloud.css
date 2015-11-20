@@ -1,0 +1,21 @@
+@import "index.css";
+
+hr {
+    clear: both;
+}
+.linha {
+    width: 100%;
+    float: left;
+}
+.coluna-3 {
+    float:left;
+    width: 30%;
+    padding-top: 5%;
+}
+.coluna-3 img {
+    width: 90%;   
+}
+.coluna-7 {
+    float:right;
+    width: 70%;
+}
